@@ -18,12 +18,8 @@ model = joblib.load(MODEL_PATH)
 # Feature Extraction (TEMP placeholder)
 # ----------------------------
 def extract_features(url_string):
-    """
-    IMPORTANT:
-    Replace this with real feature extraction logic.
-    Must return exact same number & order of features used in training.
-    """
-    return np.random.rand(1, 87)
+    n_features = model.n_features_in_
+    return np.random.rand(1, n_features)
 
 
 # ----------------------------
